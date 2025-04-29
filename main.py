@@ -15,10 +15,11 @@ if sys.platform.startswith('win'):
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 # Set API keys and configuration
-load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_CX_ID = os.getenv("GOOGLE_CX_ID")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# Access API keys from Streamlit secrets
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+GOOGLE_CX_ID = st.secrets["GOOGLE_CX_ID"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+
 
 # Initialize sentence transformer model for embeddings
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
