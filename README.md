@@ -1,4 +1,4 @@
-# Philippine-Fact-CheckerPhilippine Fact Checker 🧠🔎
+# Philippine Fact Checker 🧠🔎
 An AI-powered fact-checking chatbot built with Python, Streamlit, and LLMs (Llama 3.1 via Groq API), designed to verify claims using real-time web data, semantic similarity search, and adaptive learning.
 
 🚀 Features
